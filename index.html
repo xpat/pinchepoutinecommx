@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>¡Pinche Poutine! | ¡Pinche Poutine!</title>
 <meta name="google-site-verification" content="FWNc6tEiGPinTi5rKdIrbjejuEarAP9uyRRf-062jjo" />
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=.01, user-scalable=1"><meta name="description" content="Bienvenidos a ¡Pinche Poutine!">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"><meta name="description" content="Bienvenidos a ¡Pinche Poutine!">
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -13,90 +14,286 @@
   ga('send', 'pageview');
 
 </script>
-<style type="text/css">html{background:url(https://storage.googleapis.com/pinchepoutine/pinchepoutinecollage16x16.jpg) no-repeat center center fixed;background-image: cover}
-<title>About ¡Pinche Poutine! | ¡Pinche Poutine!</title>
+<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 <style>
-body {
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-}
-
-.overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #f2f2f2;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://storage.googleapis.com/pinchepoutine/pinchepoutinecollage16x16.jpg");
+    min-height: 90%;
 }
 </style>
-</head>
 <body>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">Horario</a>
-    <a href="#">Ubicacion</a>
-    <a href="#">Menu</a>
-    <a href="#">Contacto</a>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">PRINCIPIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">CARTA</a>
+    <a href="#about" class="w3-bar-item w3-button">CERCA DE</a>
+    <a href="#googleMap" class="w3-bar-item w3-button">CONTACTO</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Abrimos a la 1</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <!-- <span class="w3-text-red w3-hide-small" style="font-size:100px">Poutinería<br>¡Pinche Poutine!</span>
+    <span class="w3-text-red w3-hide-large w3-hide-medium" style="font-size:60px"><b>Poutinería<br>¡Pinche Poutine!</b></span>-->
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Quiero ver la carta</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">LA CARTA</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Poutine');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Poutine</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Vurgers');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Vurgers</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Botanas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Botanas</div>
+      </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Ochakes');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Ochakes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
+      </a><a href="javascript:void(0)" onclick="openMenu(event, 'Postres');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Postres</div>
+      </a><a href="javascript:void(0)" onclick="openMenu(event, 'Fusion');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Fusión</div>
+      </a>
+    </div>
+</div>
+
+    <div id="Poutine" class="w3-container menu w3-padding-32 w3-white">
+    <h1><b>Poutine</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$59 ind $99 doble</span></h1>
+      <p class="w3-text-grey">Papas fritas (o plátano macho) en aceite de cacahuate, queso lacteo o vegano artesanal, gravy caliente. Arma tu proprio poutine o escoge uno de nuestros preferidos:</p>
+      <hr>
+
+      <h1><b>Al Pastor</b> </h1>
+      <p class="w3-text-grey">Papas fritas, cubiertas con queso, bañadas en un gravy de carne de soya con un adobo de especias, chiles rojos y piña.</p>
+      <hr>
+
+      <h1><b>Británico</b> </h1>
+      <p class="w3-text-grey">Papas fritas, cubiertas con trozos de queso cheddar, bañadas en un gravy champiñon.</p>
+      <hr>
+
+      <h1><b>Clásico (Poutine de mi Abuela)</b></h1>
+      <p class="w3-text-grey">Papas fritas, cubiertas con queso, nadando en un delicioso gravy champiñon.</p>
+      <hr>
+   
+      <h1><b>Godzilla</b></h1>
+      <p class="w3-text-grey">Queso japonés (tofu) tranquilizando las papas fritas, aterrorizadas por una salsa chingona asiática de zanahoria, cebolla, ajo, jengibre, y miso.</p>
+      <hr>
+
+      <h1><b>Griego</b> </h1>
+      <p class="w3-text-grey">Queso feta encima de papas fritas, felices bajo de una maravillosa salsa BBQ casera.</p>
+      <hr>
+
+      <h1><b>Macho Mexicano (Poutine Plátano)</b></h1>
+      <p class="w3-text-grey">plátano macho, queso, salsa BBQ y panko (pan molido, dorado en aceite.</p>
+      <hr>
+
+      <h1><b>Mama Mía</b> </h1>
+      <p class="w3-text-grey">Papas fritas, cubiertas con queso, cantando "la bella vida" en una salsa boloñesa vegana.</p>
+      <hr>
+
+      <h1><b>Nopalero</b></h1>
+      <p class="w3-text-grey">Papas fritas, cubiertas con queso, sofocadas en una rica salsa picante con rebanadas de nopal cocido.</p>
+      <hr>
+
+      <h1><b>Panchito François</b></h1>
+      <p class="w3-text-grey">Papas fritas, cubiertas en queso, ahogadas en una rica salsa de ratatouille (calabaza, berenjena, cebolla, chile morrón, jitomate, ajo, especias).</p>
+      <hr>
+
+      <h1><b>Pinche Gringo</b> </h1>
+      <p class="w3-text-grey">Papas fritas, cubiertas con rebanadas de queso americano, bañadas en un gravy champiñon.</p>
+      <hr>
+
+      <h1><b>Tejano (La Inmaculada Manchada)</b></h1>
+      <p class="w3-text-grey">La versión transfronteriza del Macho Mexicano, con papas fritas (en vez de plátano macho), cubiertas con queso, bailando el "Texas Two-Step" en un delicioso gravy champiñon.</p>
+      <hr>
+      
+    </div>
+
+    <div id="Vurgers" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Vurgers (Hamburguesas Vegetarianas)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$79* solo + $30 con poutine + $30 con Ochake</span></h1>
+      <p class="w3-text-grey">Con la excepción de la hamburguesa de panela, todas las "vurgers" estan veganas, es decir, sin producto animal. El pan esta hecho a mano (normalmente lo hacemos) y vegano. La guarnición típica es de mayonesa vegana casera, mostaza, catsup Heinz, cebolla, jitomate y lechuga.</p>
+      <hr>
+
+      <h1><b>Artesanal</b> <span class="w3-tag w3-grey w3-round">Popular</span></h1>
+      <p class="w3-text-grey">Siempre deliciosas y sanas, las veggie burgers artesenales estan hechas con cereal, legumbre, nuez, verdura, y especias. Pregúntale al cocinero por los ingredientes, a veces está con quinoa y lentejas, o frijól negro con arroz, etc. </p>
+      <hr>
+
+      <h1><b>Panela</b></h1>
+      <p class="w3-text-grey">Una rica presentación de panela del mercado, empanizado y frito en aceite de cacahuate.</p>
+      <hr>
+   
+      <h1><b>Portobello</b></h1>
+      <p class="w3-text-grey">Un champiñon grande, cocido en aceite de oliva, cacahuate tostado y-o ajonjolí picante, con sal y pimienta negra.</p>
+      <hr>
+      
+      <h1><b>Seitan</b></h1>
+      <p class="w3-text-grey">Seitan (carne de trigo), hecha en casa, alta en proteina y sabor. Pidelo empanizado y frita en aceite de cacahuate o salteada en aceite vegetal y salsa de soya con chile jalapeño, jenibre y ajo.  </p>
+      <hr>
+
+      <h1><b>Tempeh*</b><span class="w3-tag w3-grey w3-round">Popular</span><span class="w3-right w3-tag w3-dark-grey w3-round">*$89</span></h1>
+      <p class="w3-text-grey">Frijól de soya fermentado, de un sabor exótico originalmente de Indonesia, importado de los Estados Unidos.</p>
+<hr>
+
+      <h1><b>Tofu</b></h1>
+      <p class="w3-text-grey">Un insumo muy popular en japón, el tofu esta hecho con frijól de soya y contiene mucho proteina, de un muy liger sabor. Pídelo empanizado y frito en aceite de cacahuate o salteada en aceite vegetal y salsa de soya con chile jalapeño, jenibre y ajo.</p>
+<hr>
+    </div>
+
+
+    <div id="Botanas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Jalapeño Poutine Poppers</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$69</span></h1>
+      <p class="w3-text-grey">Jalapeños rellenos de una mezcla sabrosa de poutine, empanizados y fritos en aceite de cacahuate. Servidos con una salsa de BBQ o de chipotle.</p>
+      <hr>
+   
+      <h1><b>Spicy Tofu Pops</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$69</span></h1>
+      <p class="w3-text-grey">Palomitas de tofu empanizado fritas en aceite de cacahuate.</p>
+      <hr>
+      
+      <h1><b>Rollos de Primavera (5 piezas)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$79</span></h1>
+      <p class="w3-text-grey">Verduras y tofu envueltos en una tortilla de arroz, frito en aceite de cacahuate, servidos con una deliciosa salsa casera de BBQ.</p>
+      <hr>
+      
+      <h1><b>Vings (Veggie Wings)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$89</span></h1>
+      <p class="w3-text-grey">La versión vegana de alitas, solo el colifor y o brocolí empanizado, frito en aceite de cacahuate, y servido con nuestra famosa salsa BBQ.</p>
+
+     <h1><b>Dedos de To...F.U. Trump</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$79</span></h1>
+      <p class="w3-text-grey">Dedos de tofu empanizados, servidos con una sabrosa y cremosa salsa de BBQ o chipotle. 
+</p>
+      <hr>
+      
+      <h1><b>Garden Veggie Straws</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$29</span></h1>
+      <p class="w3-text-grey">Chips de verduras, también en forma de popote (para jugar como una estrella del cine que fuma, lol).
+</p>
+    </div>
+
+
+    <div id="Ochakes" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Ravioli filled with cheese</p>
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+<br>
+
   </div>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; bienvenido</span>
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="/w3images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="/w3images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
+<!-- Contact (with google maps) -->
+<div id="googleMap" class="w3-grayscale-max" style="width:100%;height:400px;"></div>
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 05050515-122330</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
 <script>
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
 }
 
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
 }
+document.getElementById("myLink").click();
 </script>
-     
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSFnLS3cxT4yHYxcKqf5pXxg6C_OCoVH0&callback=myMap"></script>
 </body>
 </html>
-
